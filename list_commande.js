@@ -1,4 +1,25 @@
+axios.get('http://localhost/Projet_web/api.php?resource=commandes')
+  .then((response) => {
+    const products = response.data;
+    const tableBody = document.querySelector('#products-table tbody');
+  
 
+    products.forEach((product) => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${product.id}</td>
+        <td>${product.quantite}</td>
+        <td>${product.produit_commande}</td>
+        <td>${product.date_commande}</td>
+        <td><a href="details_clients.html?id=${product.id}">Voir</a></td>
+        <td><a href="modify_clients.html?id=${product.id}">Modifier</a></td>
+        `;
+      tableBody.appendChild(row);
+    });
+  })
+  .catch((error) => {
+    console.error('Erreur lors de la récupération des commandes:', error);
+  });
 
 
   const searchBar = document.getElementById("search-bar");
