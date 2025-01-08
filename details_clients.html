@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="details.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body >
+    <button id="menu-toggle" class="menu-toggle">☰</button> 
+    <button id="menu-toggle" class="menu-toggle">☰</button> 
+    <div class="menu" >
+        <button id="menu-toggle" class="menu-toggle">☰</button> 
+    <div class="menu" >
+        <img src="logo.png" alt="logo" style="width: 100%;height: auto;margin-bottom: 50px;">
+        <div class="btns">
+            <a href="index.html" class="buttons"><b>Accueil</b></a>
+            <hr>
+            <div class="product-section">
+                <a href="#" class="buttons product-toggle">
+                    <b>Produits</b>
+                    <span class="toggle-icon">▼</span>
+                </a>
+                <hr>
+                <div class="product-submenu">
+                    <a href="Liste_produit.html" class="buttons submenu-button"><b>Liste Produits</b></a>
+                    <hr>
+                    <a href="Ajout_produit.html" class="buttons submenu-button"><b>Ajouter Produits</b></a>
+                    <hr>
+                    <a href="suppression_produit.html" class="buttons submenu-button"><b>Supprimer Produits</b></a>
+                    <hr>
+                </div>
+            </div>
+            <div class="product-section">
+                <a href="#" class="buttons product-toggle">
+                    <b>Commandes</b>
+                    <span class="toggle-icon">▼</span>
+                </a>
+                <hr>
+                <div class="product-submenu">
+                    <a href="Liste_commande.html" class="buttons submenu-button"><b>Liste Commandes</b></a>
+                    <hr>
+                    <a href="Ajout_Commande.html" class="buttons submenu-button"><b>Ajouter Commande</b></a>
+                    <hr>
+                    <a href="suppression_commande.html" class="buttons submenu-button"><b>Supprimer Commande</b></a>
+                    <hr>
+                </div>
+            </div>
+            <div class="product-section">
+                <a href="#" class="buttons product-toggle">
+                    <b>Clients</b>
+                    <span class="toggle-icon">▼</span>
+                </a>
+                <hr>
+                <div class="product-submenu">
+                    <a href="Liste_clients.html" class="buttons submenu-button"><b>Liste Clients</b></a>
+                    <hr>
+                    <a href="ajout_client.html" class="buttons submenu-button"><b>Ajouter Clients</b></a>
+                    <hr>
+                    <a href="suppression_client.html" class="buttons submenu-button"><b>Supprimer Clients</b></a>
+                    <hr>
+                </div>
+            </div>
+            <div class="product-section">
+                <a href="#" class="buttons product-toggle">
+                    <b>Utilisateurs</b>
+                    <span class="toggle-icon">▼</span>
+                </a>
+                <hr>
+                <div class="product-submenu">
+                    <a href="liste_utilisateurs.html" class="buttons submenu-button"><b>Liste Utilisateurs</b></a>
+                    <hr>
+                    <a href="ajout_utilisateur.html" class="buttons submenu-button"><b>Ajouter Utilisateur</b></a>
+                    <hr>
+                    <a href="suppression_utilisateur.html" class="buttons submenu-button"><b>Supprimer Utilisateur</b></a>
+                    <hr>
+                </div>
+            </div>
+            <div class="product-section">
+                <a href="#" class="buttons product-toggle">
+                    <b>Factures</b>
+                    <span class="toggle-icon">▼</span>
+                </a>
+                <hr>
+                <div class="product-submenu" s>
+                    <a href="liste_facture.html" class="buttons submenu-button"><b>Liste Factures</b></a>
+                    <hr>
+                    <a href="ajout_facture.html" class="buttons submenu-button"><b>Ajouter Facture</b></a>
+                    <hr>
+                    <a href="suppression_facture.html" class="buttons submenu-button"><b>Supprimer Facture</b></a>
+                    <hr>
+                </div>
+            </div>
+            <a href="index.html" class="buttons"><b>Contact us</b></a>
+            <hr>
+        </div>
+        </div>
+    </div>
+    <div class="body_content">
+        <div>
+            <div class="header">
+                <div class="Main_header">
+                    <h2 style="text-align: center;padding: 20px;padding-bottom: 5px;">Welcome to our E-Commerce shop</h2>
+                    <div style="padding-bottom: 20px;">
+                        <p style="text-align: center;">Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div id="login">
+                    <a href="login.html">Disconnect</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="product_holder" >
+            <div class="product_details" style="background-color: white;text-align: center;">
+                <h1>Details Client</h1>
+                <p id="id">ID du client</p>
+                <p id="nom">Nom </p> 
+                <p id="email">email</p>
+                <p id="telephone">telephone</p>
+                <p id="adresse">adresse</p>
+            </div>
+
+        </div>
+      
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are a company dedicated to providing excellent service and products.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: ??????????@gmail.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> E-commerce. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    
+    
+    <script src="details_clients.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
